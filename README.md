@@ -1,26 +1,25 @@
-# 🏦 Banking System Console
+# 💱 Currency Converter
 
-A console-based Banking System application developed using **Java** and **Object-Oriented Programming (OOP)** concepts. The application allows users to perform core banking operations such as account creation, deposits, withdrawals, balance enquiries, and fund transfers.
+A full-stack Currency Converter application developed using **Java**, **Spring Boot**, **HTML**, **CSS**, and **JavaScript**. The application allows users to convert currencies using a REST API and a responsive web interface.
 
 ## 🚀 Features
 
-* Create new bank accounts
-* Deposit money
-* Withdraw money
-* Check account balance
-* Transfer funds between accounts
-* Delete accounts
-* Exception handling for invalid operations
-* User-friendly console interface
+* Convert currencies instantly
+* Real-time API communication
+* User-friendly interface
+* RESTful API built with Spring Boot
+* Cross-Origin Resource Sharing (CORS) support
+* Exception handling and validation
+* Responsive design
 
 ## 🛠️ Tech Stack
 
 ### Backend
 
-* Java
-* OOP (Object-Oriented Programming)
-* Collections Framework
-* Exception Handling
+* Java 17
+* Spring Boot
+* Maven
+* REST API
 
 ### Frontend
 
@@ -31,20 +30,57 @@ A console-based Banking System application developed using **Java** and **Object
 ## 📂 Project Structure
 
 ```text
-Banking-System-Console
+currency-converter
 │
 ├── backend
-│   ├── Account.java
-│   ├── Bank.java
-│   ├── BankServer.java
-│   └── Main.java
+│   ├── controller
+│   │   └── CurrencyController.java
+│   ├── service
+│   │   └── CurrencyService.java
+│   ├── model
+│   │   ├── ConversionRequest.java
+│   │   ├── ConversionResponse.java
+│   │   └── ExchangeRateResponse.java
+│   ├── config
+│   │   └── CacheConfig.java
+│   ├── exception
+│   │   └── GlobalExceptionHandler.java
+│   └── CurrencyConverterApplication.java
 │
 ├── frontend
 │   ├── index.html
 │   ├── style.css
-│   └── app.js
+│   └── script.js
 │
 └── README.md
+```
+
+## 🔌 API Endpoint
+
+### Convert Currency
+
+**POST**
+
+```http
+http://localhost:8080/api/convert
+```
+
+### Request
+
+```json
+{
+  "from": "USD",
+  "to": "INR",
+  "amount": 100
+}
+```
+
+### Response
+
+```json
+{
+  "convertedAmount": 8300.0
+}
 ```
 
 ## ▶️ How to Run
@@ -52,50 +88,71 @@ Banking-System-Console
 ### Backend
 
 ```bash
-javac *.java
-java Main
+mvn spring-boot:run
 ```
 
 ### Frontend
 
 1. Open the `frontend` folder.
 2. Open `index.html` using Live Server in VS Code.
-3. Use the banking interface to perform transactions.
+3. Enter the amount and currencies.
+4. Click **Convert**.
 
 ## 🎯 Functionalities
 
-### Account Management
+### Currency Conversion
 
-* Create Account
-* Delete Account
-* View Account Details
+* Convert USD to INR
+* Convert INR to USD
+* Convert EUR to GBP
+* Convert multiple supported currencies
 
-### Transactions
+### API Integration
 
-* Deposit Funds
-* Withdraw Funds
-* Transfer Funds
-* Check Balance
+* Spring Boot REST API
+* JSON Request and Response Handling
+* Backend-Frontend Communication
+
+### User Interface
+
+* Responsive Design
+* Easy Currency Selection
+* Instant Conversion Results
 
 ## 📸 Screenshots
 
-### Banking Dashboard
+### Currency Converter Home Page
 
-<img width="1918" height="866" alt="image" src="https://github.com/user-attachments/assets/5b98bc0f-d701-4994-968a-1da9b48260e0" />
+![Home Page](screenshots/home-page.png)
 
+### Currency Conversion Result
 
-### Transactions Page
+![Conversion Result](screenshots/conversion-result.png)
 
-<img width="1907" height="875" alt="image" src="https://github.com/user-attachments/assets/b7f23bd7-ead5-4117-9ef2-1d9558e88cbd" />
+### API Testing Using Thunder Client
 
+![API Test](screenshots/api-test.png)
+
+### Project Structure
+
+![Project Structure](screenshots/project-structure.png)
 
 ## 🎯 Future Enhancements
 
-* MySQL Database Integration
-* Transaction History Tracking
-* Interest Calculation Module
-* JavaFX/Swing GUI Version
-* Online Banking Features
+* Real-Time Exchange Rate API Integration
+* Conversion History Tracking
+* Dark Mode Support
+* Currency Search and Filtering
+* Exchange Rate Charts
+* Multi-Currency Conversion
+* Cloud Deployment
+
+## 👨‍💻 Author
+
+**Roja Dandu**
+
+* GitHub: https://github.com/rojadandu123
+* LinkedIn: https://www.linkedin.com/in/poornima-d-9a4b65369/
 
 ## 📜 License
 
