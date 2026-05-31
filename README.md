@@ -141,10 +141,6 @@ mvn spring-boot:run
 * Multi-Currency Conversion
 
 
-
-* GitHub: https://github.com/rojadandu123
-* LinkedIn: https://www.linkedin.com/in/poornima-d-9a4b65369/
-
 ## 📜 License
 
 This project is developed for educational and portfolio purposes.
