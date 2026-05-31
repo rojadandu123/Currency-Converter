@@ -16,15 +16,15 @@ A full-stack Currency Converter application developed using **Spring Boot**, **J
 
 ### Backend
 
-* Java 17
+* Java 
 * Spring Boot
 * Maven
 * REST API
 
 ### Frontend
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * JavaScript
 
 ## 📂 Project Structure
@@ -120,7 +120,6 @@ Add screenshots here after running the project.
 * Currency search feature
 * Exchange rate charts
 * Multi-currency support
-* Deployment on cloud platforms
 
 ## 📜 License
 
