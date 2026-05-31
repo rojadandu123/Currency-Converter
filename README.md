@@ -123,19 +123,13 @@ mvn spring-boot:run
 
 ### Currency Converter Home Page
 
-![Home Page](screenshots/home-page.png)
+<img width="577" height="481" alt="image" src="https://github.com/user-attachments/assets/c41318e5-95b4-4a63-b066-68071fe41f7b" />
+
 
 ### Currency Conversion Result
 
-![Conversion Result](screenshots/conversion-result.png)
+<img width="565" height="582" alt="image" src="https://github.com/user-attachments/assets/385f2b36-d15a-45c1-95d5-f20d5517a358" />
 
-### API Testing Using Thunder Client
-
-![API Test](screenshots/api-test.png)
-
-### Project Structure
-
-![Project Structure](screenshots/project-structure.png)
 
 ## 🎯 Future Enhancements
 
@@ -145,11 +139,8 @@ mvn spring-boot:run
 * Currency Search and Filtering
 * Exchange Rate Charts
 * Multi-Currency Conversion
-* Cloud Deployment
 
-## 👨‍💻 Author
 
-**Roja Dandu**
 
 * GitHub: https://github.com/rojadandu123
 * LinkedIn: https://www.linkedin.com/in/poornima-d-9a4b65369/
