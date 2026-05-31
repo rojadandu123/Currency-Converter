@@ -1,25 +1,26 @@
-# 💱 Currency Converter
+# 🏦 Banking System Console
 
-A full-stack Currency Converter application developed using **Spring Boot**, **Java**, **HTML**, **CSS**, and **JavaScript**. This application enables users to convert currencies through a REST API and a user-friendly web interface.
+A console-based Banking System application developed using **Java** and **Object-Oriented Programming (OOP)** concepts. The application allows users to perform core banking operations such as account creation, deposits, withdrawals, balance enquiries, and fund transfers.
 
 ## 🚀 Features
 
-* Currency conversion between multiple currencies
-* RESTful API built with Spring Boot
-* Responsive frontend using HTML, CSS, and JavaScript
-* Clean and modern user interface
-* Cross-Origin Resource Sharing (CORS) support
-* Error handling and exception management
-* Modular and scalable project structure
+* Create new bank accounts
+* Deposit money
+* Withdraw money
+* Check account balance
+* Transfer funds between accounts
+* Delete accounts
+* Exception handling for invalid operations
+* User-friendly console interface
 
 ## 🛠️ Tech Stack
 
 ### Backend
 
-* Java 
-* Spring Boot
-* Maven
-* REST API
+* Java
+* OOP (Object-Oriented Programming)
+* Collections Framework
+* Exception Handling
 
 ### Frontend
 
@@ -30,57 +31,20 @@ A full-stack Currency Converter application developed using **Spring Boot**, **J
 ## 📂 Project Structure
 
 ```text
-currency-converter
+Banking-System-Console
 │
 ├── backend
-│   ├── controller
-│   │   └── CurrencyController.java
-│   ├── service
-│   │   └── CurrencyService.java
-│   ├── model
-│   │   ├── ConversionRequest.java
-│   │   ├── ConversionResponse.java
-│   │   └── ExchangeRateResponse.java
-│   ├── config
-│   │   └── CacheConfig.java
-│   ├── exception
-│   │   └── GlobalExceptionHandler.java
-│   └── CurrencyConverterApplication.java
+│   ├── Account.java
+│   ├── Bank.java
+│   ├── BankServer.java
+│   └── Main.java
 │
 ├── frontend
 │   ├── index.html
 │   ├── style.css
-│   └── script.js
+│   └── app.js
 │
 └── README.md
-```
-
-## 🔌 API Endpoint
-
-### Convert Currency
-
-**POST**
-
-```http
-http://localhost:8080/api/convert
-```
-
-### Request
-
-```json
-{
-  "from": "USD",
-  "to": "INR",
-  "amount": 100
-}
-```
-
-### Response
-
-```json
-{
-  "convertedAmount": 8300.0
-}
 ```
 
 ## ▶️ How to Run
@@ -88,38 +52,50 @@ http://localhost:8080/api/convert
 ### Backend
 
 ```bash
-mvn spring-boot:run
+javac *.java
+java Main
 ```
 
 ### Frontend
 
 1. Open the `frontend` folder.
 2. Open `index.html` using Live Server in VS Code.
-3. Enter the amount and currencies.
-4. Click **Convert**.
+3. Use the banking interface to perform transactions.
+
+## 🎯 Functionalities
+
+### Account Management
+
+* Create Account
+* Delete Account
+* View Account Details
+
+### Transactions
+
+* Deposit Funds
+* Withdraw Funds
+* Transfer Funds
+* Check Balance
 
 ## 📸 Screenshots
 
-Add screenshots here after running the project.
+### Banking Dashboard
 
-### Home Page
-
-<img width="733" height="596" alt="image" src="https://github.com/user-attachments/assets/244c3f12-5fcf-4341-812f-1313f8a5f3c9" />
+<img width="1918" height="866" alt="image" src="https://github.com/user-attachments/assets/5b98bc0f-d701-4994-968a-1da9b48260e0" />
 
 
-### Conversion Result
+### Transactions Page
 
-<img width="682" height="662" alt="image" src="https://github.com/user-attachments/assets/21896e3e-f2f1-4f7b-9f62-cbcb53a3caa6" />
+<img width="1907" height="875" alt="image" src="https://github.com/user-attachments/assets/b7f23bd7-ead5-4117-9ef2-1d9558e88cbd" />
 
 
 ## 🎯 Future Enhancements
 
-* Real-time exchange rates API integration
-* Conversion history
-* Dark mode
-* Currency search feature
-* Exchange rate charts
-* Multi-currency support
+* MySQL Database Integration
+* Transaction History Tracking
+* Interest Calculation Module
+* JavaFX/Swing GUI Version
+* Online Banking Features
 
 ## 📜 License
 
